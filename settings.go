@@ -1,3 +1,3 @@
 package main
 
-const dbPath = "./rules/"
+const dbPath = "../rules/"
