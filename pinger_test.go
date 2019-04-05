@@ -16,7 +16,7 @@ func TestGetPingDNSFail(t *testing.T) {
 	response := getPing("https://undefined.undefined")
 	if response.result {
 		t.Errorf("Response should be false, but it is %t", response.result)
-		t.Errorf("Ping get success: code=%d, message=%s.", response.statusCode, response.message)
+		// t.Errorf("Ping get success: code=%d, message=%s.", response.statusCode, response.message)
 	}
 	if response.statusCode != 0 {
 		t.Errorf("Response statusCode should be 0, but it is %d", response.statusCode)
