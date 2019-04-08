@@ -6,6 +6,7 @@ import (
 )
 
 // HTTP Get ping
+//
 func getPing(url string) PingResponse {
 	timeout := time.Duration(10 * time.Second)
 	client := http.Client{
