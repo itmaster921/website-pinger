@@ -9,7 +9,6 @@ import (
 	"strings"
 )
 
-// dbSet – save rule to database
 func dbSet(hostname string, rule CheckRule) {
 	filename := fmt.Sprintf("%s%s__%s.db", dbPath, hostname, GetMD5Hash(rule.URL))
 	Save(filename, rule)
