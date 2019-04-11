@@ -73,14 +73,6 @@ You can control settings with REST API.
 curl -X POST http://localhost:8080/api/set --data "url=http://ifmo.su&status_code=200&informer_type=0&informer_payload=code"
 ```
 
-### Informers
-
-Currently we support only [CodeX Bot](https://ifmo.su/bot) informer. Notifications are made to Telegram according to the documentation: [https://github.com/codex-bot/Webhooks](https://github.com/codex-bot/Webhooks)
-
-|Informer code|name|description
-|--|--|--
-|`0`|`codex bot`|CodeX Bot Notifications
-
 ## Get rule by URL
 
 Get information about the URL specified
